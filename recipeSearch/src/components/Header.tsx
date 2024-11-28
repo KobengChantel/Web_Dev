@@ -68,11 +68,12 @@ const Logo = () => {
       {currentArea && (
         <div>
           <Link
-            className="bg-yellow-500 text-white p-4 text-xs sm:text-lg rounded font-bold"
-            href={recipeID ? `/types/${currentArea}` : "/types/"}
-          >
-            Back to {recipeID ? `${currentArea} recipes` : "recipe types"}
-          </Link>
+  className="bg-yellow-500 text-white p-4 text-xs sm:text-lg rounded font-bold"
+  href={recipeID ? `/types` : "/types"}
+>
+  Back to {recipeID ? `${currentArea} recipes` : "recipe types"}
+</Link>
+
         </div>
       )}
     </div>
